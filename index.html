@@ -64,6 +64,31 @@
       margin-bottom: 22px;
     }
 
+    .project-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  margin-top: 15px;
+}
+
+.project-images figure {
+  width: 300px;
+  margin: 0;
+}
+
+.project-images img {
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.project-images figcaption {
+  font-size: 14px;
+  color: #555;
+  margin-top: 6px;
+  text-align: center;
+}
+
     .item h3 {
       margin-bottom: 5px;
       color: #374151;
@@ -99,7 +124,7 @@
     <a href="#about">About</a>
     <a href="#education">Education</a>
     <a href="#experience">Experience</a>
-    <a href="#research">Research</a>
+    <a href="#portfolio">Research Portfolio</a>
     <a href="#publications">Publications</a>
     <a href="#skills">Skills</a>
     <a href="#achievements">Achievements</a>
@@ -231,33 +256,133 @@
 
 </section>
 
-  <section id="research">
-    <h2>Research Projects</h2>
+<section id="portfolio">
+  <h2>Research Portfolio</h2>
 
-    <div class="item">
-      <h3>Supersonic Jet Noise Reduction Using Fluidic Injection</h3>
-      <p>
-        Investigated the effect of fluidic injection on supersonic rectangular
-        jet noise reduction using far-field acoustics and flow diagnostics.
-      </p>
-    </div>
+  <div class="item">
+    <h3>1. Exit Profile Effects in Square Supersonic Nozzles</h3>
+    <p>
+      Investigating how exit-profile design influences the acoustic and flow behavior
+      of square supersonic nozzles. This work compares conventional square nozzle
+      configurations with designs incorporating convergent-divergent contouring on
+      both sides of the nozzle to evaluate whether square nozzles can approach the
+      acoustic behavior of circular nozzles while preserving geometric advantages
+      for future thrust-vectoring applications.
+    </p>
 
-    <div class="item">
-      <h3>Twin Nozzle Upstream Geometry Effects</h3>
-      <p>
-        Studied the influence of upstream geometry on screech feedback mechanisms,
-        broadband shock-associated noise, and acoustic behavior in twin supersonic jets.
-      </p>
-    </div>
+    <div class="project-images">
+      <figure>
+        <img src="exit-profile-design.jpg" alt="Square nozzle exit profile design">
+        <figcaption>Square nozzle exit-profile design</figcaption>
+      </figure>
 
-    <div class="item">
-      <h3>Schlieren and PIV Flow Diagnostics</h3>
-      <p>
-        Used Schlieren imaging and Particle Image Velocimetry to visualize and
-        analyze flow structures in supersonic jet experiments.
-      </p>
+      <figure>
+        <img src="exit-profile-acoustics.jpg" alt="Acoustic data for square nozzle exit profile study">
+        <figcaption>Acoustic dataset comparison</figcaption>
+      </figure>
     </div>
-  </section>
+  </div>
+
+  <div class="item">
+    <h3>2. Upstream Geometry Effects on Twin Supersonic Jets</h3>
+    <p>
+      Studying how upstream chamber geometry affects twin supersonic jet acoustics
+      even when the nominal nozzle design conditions remain the same. This project
+      highlights how facility-specific implementation details can strongly influence
+      screech feedback mechanisms, multimode behavior, and repeatability across
+      different experimental studies.
+    </p>
+
+    <div class="project-images">
+      <figure>
+        <img src="twin-jet-design.jpg" alt="Twin supersonic jet nozzle design">
+        <figcaption>Twin-jet nozzle configuration</figcaption>
+      </figure>
+
+      <figure>
+        <img src="twin-jet-acoustics.jpg" alt="Twin jet acoustic dataset">
+        <figcaption>Twin-jet acoustic response</figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <div class="item">
+    <h3>3. Throat Location Effects on Circular Jet Acoustics</h3>
+    <p>
+      Investigating the influence of throat location on the acoustic behavior of
+      circular supersonic nozzles. This work examines an underexplored nozzle
+      design parameter and evaluates how changes in throat placement affect jet
+      development, shock-cell structure, and acoustic radiation.
+    </p>
+
+    <div class="project-images">
+      <figure>
+        <img src="throat-location-design.jpg" alt="Circular nozzle throat location design">
+        <figcaption>Circular nozzle throat-location design</figcaption>
+      </figure>
+
+      <figure>
+        <img src="throat-location-acoustics.jpg" alt="Acoustic data for throat location study">
+        <figcaption>Throat-location acoustic comparison</figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <div class="item">
+    <h3>4. Fluidic Injection and Trapezoidal Nozzle Studies</h3>
+    <p>
+      Assisted in experimental studies of fluidic injection and trapezoidal nozzle
+      configurations for supersonic jet noise reduction. These investigations focus
+      on how injection improves flow mixing, modifies turbulent structures, and
+      affects the acoustic behavior of non-axisymmetric supersonic jets.
+    </p>
+
+    <div class="project-images">
+      <figure>
+        <img src="fluidic-injection-design.jpg" alt="Fluidic injection nozzle design">
+        <figcaption>Fluidic injection design</figcaption>
+      </figure>
+
+      <figure>
+        <img src="trapezoid-nozzle-design.jpg" alt="Trapezoidal nozzle design">
+        <figcaption>Trapezoidal nozzle design</figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <div class="item">
+    <h3>5. Flow Visualization and Acoustic Analysis Methods</h3>
+    <p>
+      Applying advanced experimental and data-analysis methods to understand
+      turbulent flow structures and acoustic radiation in supersonic jets. Methods
+      include Schlieren visualization, SPOD, spectrogram analysis, wave-number
+      analysis, and modal processing techniques such as MPT.
+    </p>
+
+    <div class="project-images">
+      <figure>
+        <img src="schlieren.jpg" alt="Schlieren visualization of supersonic jet">
+        <figcaption>Schlieren visualization</figcaption>
+      </figure>
+
+      <figure>
+        <img src="spod-analysis.jpg" alt="SPOD analysis result">
+        <figcaption>SPOD modal analysis</figcaption>
+      </figure>
+
+      <figure>
+        <img src="spectrogram.jpg" alt="Spectrogram analysis of acoustic data">
+        <figcaption>Spectrogram analysis</figcaption>
+      </figure>
+
+      <figure>
+        <img src="mpt-analysis.jpg" alt="MPT analysis result">
+        <figcaption>MPT / modal processing result</figcaption>
+      </figure>
+    </div>
+  </div>
+
+</section>
 
   <section id="publications">
     <h2>Publications & Presentations</h2>
