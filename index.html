@@ -37,6 +37,7 @@
       text-align: center;
       position: sticky;
       top: 0;
+      z-index: 100;
     }
 
     nav a {
@@ -61,33 +62,8 @@
     }
 
     .item {
-      margin-bottom: 22px;
+      margin-bottom: 35px;
     }
-
-    .project-images {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 18px;
-  margin-top: 15px;
-}
-
-.project-images figure {
-  width: 300px;
-  margin: 0;
-}
-
-.project-images img {
-  width: 100%;
-  border-radius: 8px;
-  border: 1px solid #ddd;
-}
-
-.project-images figcaption {
-  font-size: 14px;
-  color: #555;
-  margin-top: 6px;
-  text-align: center;
-}
 
     .item h3 {
       margin-bottom: 5px;
@@ -97,6 +73,52 @@
     .date {
       color: #666;
       font-style: italic;
+    }
+
+    .project-images {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-top: 15px;
+      justify-content: center;
+    }
+
+    .project-images figure {
+      margin: 0;
+      text-align: center;
+    }
+
+    .project-images img {
+      width: 100%;
+      max-height: 360px;
+      object-fit: contain;
+      border-radius: 8px;
+      border: 1px solid #ddd;
+      background: white;
+    }
+
+    .image-small {
+      width: 320px;
+    }
+
+    .image-medium {
+      width: 460px;
+    }
+
+    .image-large {
+      width: 760px;
+      max-width: 100%;
+    }
+
+    .image-wide {
+      width: 900px;
+      max-width: 100%;
+    }
+
+    .project-images figcaption {
+      font-size: 14px;
+      color: #555;
+      margin-top: 6px;
     }
 
     footer {
@@ -120,78 +142,81 @@
   <p>Supersonic Jet Acoustics • Aeroacoustics • Flow Control • Experimental Fluid Mechanics</p>
 </header>
 
-  <nav>
-    <a href="#about">About</a>
-    <a href="#education">Education</a>
-    <a href="#experience">Experience</a>
-    <a href="#portfolio">Research Portfolio</a>
-    <a href="#publications">Publications</a>
-    <a href="#skills">Skills</a>
-    <a href="#achievements">Achievements</a>
-    <a href="#cv">CV</a>
-    <a href="#contact">Contact</a>
-  </nav>
+<nav>
+  <a href="#about">About</a>
+  <a href="#education">Education</a>
+  <a href="#experience">Experience</a>
+  <a href="#portfolio">Research Portfolio</a>
+  <a href="#publications">Publications</a>
+  <a href="#skills">Skills</a>
+  <a href="#achievements">Achievements</a>
+  <a href="#cv">CV</a>
+  <a href="#contact">Contact</a>
+</nav>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>
-      I am a Ph.D. researcher in Aerospace Engineering with research interests in
-      supersonic jet noise, nozzle acoustics, flow control, fluidic injection,
-      and experimental aeroacoustics.
-    </p>
-  </section>
+<section id="about">
+  <h2>About Me</h2>
+  <p>
+    I am a Ph.D. Candidate in Aerospace Engineering specializing in supersonic jet
+    acoustics, aeroacoustics, flow control, nozzle design, and experimental fluid mechanics.
+    My research focuses on understanding and reducing jet noise through advanced nozzle
+    designs, fluidic injection techniques, and high-fidelity experimental diagnostics.
+  </p>
 
-  <section id="education">
+  <p>
+    My work combines experimental testing, acoustic measurements, Schlieren imaging,
+    Particle Image Velocimetry (PIV), modal analysis, and computational modeling.
+    I also have industry research experience in rheological material modeling,
+    CFD validation, Dymola-based simulation frameworks, and manufacturing process simulation.
+  </p>
+</section>
+
+<section id="education">
   <h2>Education</h2>
 
   <div class="item">
     <h3>Ph.D. in Aerospace Engineering</h3>
     <p class="date">University of Cincinnati — In Progress</p>
     <p>
-      Research focused on supersonic jet acoustics, aeroacoustics, nozzle flow physics,
-      and jet noise reduction using fluidic injection and advanced experimental diagnostics.
+      Research focused on supersonic jet acoustics, nozzle flow physics,
+      jet noise reduction, and experimental aeroacoustics.
     </p>
   </div>
 
   <div class="item">
     <h3>Master’s Degree in Aerospace Engineering</h3>
-    <p class="date">University Name — Year</p>
+    <p class="date">University of Cincinnati</p>
     <p>
-      Add your master’s research, thesis, or coursework focus here.
+      Coursework and research in aeroacoustics, advanced propulsion, finite element analysis,
+      gas turbine combustion, robotics, and engineering project management.
     </p>
   </div>
 
   <div class="item">
-    <h3>Bachelor’s Degree in Mechanical / Aerospace Engineering</h3>
-    <p class="date">University Name — Year</p>
+    <h3>Bachelor’s Degree in Mechanical Engineering</h3>
+    <p class="date">Jawaharlal Nehru Technological University Kakinada</p>
     <p>
-      Add your undergraduate degree details here.
+      Coursework included automotive engineering, machine design, CAD/CAM,
+      production technology, fluid mechanics, heat transfer, and thermal engineering.
     </p>
   </div>
 </section>
 
-  <section id="experience">
+<section id="experience">
   <h2>Professional Experience</h2>
 
   <div class="item">
     <h3>Graduate Research Assistant – Aerospace Engineering</h3>
-    <p class="date">Gas Dynamics & Propulsion Lab |University of Cincinnati | Aug 2020 – Present</p>
+    <p class="date">Gas Dynamics & Propulsion Lab | University of Cincinnati | Aug 2020 – Present</p>
 
     <ul>
       <li>Lead experimental research in supersonic jet aeroacoustics, focusing on jet noise reduction, fluidic injection, and high-speed flow physics.</li>
-
       <li>Designed, manufactured, and experimentally validated rectangular, square, circular, trapezoidal, and twin-nozzle configurations, including hundreds of 3D-printed components and test articles.</li>
-
       <li>Built and integrated experimental facilities involving fluidic injection hardware, traversing systems, pressure instrumentation, acoustic measurement systems, and LabVIEW-controlled data acquisition.</li>
-
       <li>Conducted far-field and near-field acoustic measurements and applied advanced analysis techniques including wave-number analysis, acoustic surrogate wave-packet analysis, POD, and SPOD to investigate jet noise generation mechanisms.</li>
-
       <li>Performed Schlieren imaging and Particle Image Velocimetry (PIV) using high-speed and low-speed laser systems to characterize shock structures and turbulent flow behavior in supersonic jets.</li>
-
       <li>Executed precision optical alignment, hot-wire mass-flow calibration, environmental corrections, and repeatability studies to ensure high-fidelity experimental datasets.</li>
-
       <li>Collaborate with researchers at Stanford University by providing experimental datasets for CFD validation and comparison studies, contributing as a co-author on joint publications involving large-eddy simulations and experimental investigations.</li>
-
       <li>Author and co-author multiple AIAA publications and conference presentations on jet acoustics, fluidic injection, nozzle design, and twin-jet aeroacoustics.</li>
     </ul>
   </div>
@@ -202,15 +227,10 @@
 
     <ul>
       <li>Develop and validate rheological material models from experimental adhesive data using Cross, Meter, Carreau-Yasuda, and Master Curve methodologies.</li>
-
       <li>Utilize JMP Statistical Discovery Software for curve fitting, regression analysis, parameter estimation, model comparison, and statistical validation.</li>
-
       <li>Played a key role in the development and deployment of the Adhesive Network Flow Model (ANFM), a Dymola-based simulation framework used globally across Procter & Gamble manufacturing facilities.</li>
-
       <li>Convert experimental rheology data into simulation-ready material models for predicting adhesive flow behavior throughout manufacturing systems.</li>
-
       <li>Support verification and validation efforts using high-fidelity CFD simulations in Flow-3D, COMSOL Multiphysics, and ANSYS Fluent executed on HPC computing environments.</li>
-
       <li>Train and support engineers worldwide in deploying, running, and troubleshooting ANFM simulations for feminine care and baby care manufacturing applications.</li>
     </ul>
   </div>
@@ -221,9 +241,7 @@
 
     <ul>
       <li>Assisted undergraduate and graduate students in laboratory-based engineering courses.</li>
-
       <li>Supported instruction for Fluid Dynamics, Electromagnetic Induction, and Aeroacoustics laboratory sessions.</li>
-
       <li>Guided students through experimental procedures, data analysis, and technical report preparation.</li>
     </ul>
   </div>
@@ -234,9 +252,7 @@
 
     <ul>
       <li>Performed defect detection and quality inspection for approximately 70 automobiles per day using Direct Run Loss methodologies.</li>
-
       <li>Contributed to manufacturing quality improvement initiatives and scrap reduction efforts.</li>
-
       <li>Collaborated with production and quality teams to support efficient and cost-effective manufacturing operations.</li>
     </ul>
   </div>
@@ -247,103 +263,95 @@
 
     <ul>
       <li>Studied large-scale steel manufacturing processes, industrial equipment, and production workflows.</li>
-
       <li>Collaborated with engineering teams to identify opportunities for process improvement and operational efficiency.</li>
-
       <li>Prepared technical reports and presented recommendations based on manufacturing process evaluations.</li>
     </ul>
   </div>
-
 </section>
 
 <section id="portfolio">
   <h2>Research Portfolio</h2>
 
   <div class="item">
-    <h3>1. Exit Profile Effects in Square Supersonic Nozzles</h3>
+    <h3>Effect of Shape on Supersonic Nozzles</h3>
     <p>
-      Investigating how exit-profile design influences the acoustic and flow behavior
-      of square supersonic nozzles. This work compares conventional square nozzle
-      configurations with designs incorporating convergent-divergent contouring on
-      both sides of the nozzle to evaluate whether square nozzles can approach the
-      acoustic behavior of circular nozzles while preserving geometric advantages
-      for future thrust-vectoring applications.
+      Investigating how nozzle exit shape influences the acoustic behavior of supersonic jets.
+      This work compares circular, square, and modified square convergent-divergent nozzle
+      designs to evaluate whether square nozzles can approach the lower-noise behavior of
+      circular nozzles while maintaining geometric advantages for future thrust-vectoring applications.
     </p>
 
     <div class="project-images">
-      <figure>
-        <img src="exit-profile-design.jpg" alt="Square nozzle exit profile design">
-        <figcaption>Square nozzle exit-profile design</figcaption>
+      <figure class="image-wide">
+        <img src="exit-profile-design.jpg" alt="Exit profile nozzle design comparison">
+        <figcaption>Nozzle exit-profile design comparison</figcaption>
       </figure>
 
-      <figure>
-        <img src="exit-profile-acoustics.jpg" alt="Acoustic data for square nozzle exit profile study">
-        <figcaption>Acoustic dataset comparison</figcaption>
+      <figure class="image-large">
+        <img src="exit-profile-acoustics.jpg" alt="Exit profile acoustic comparison">
+        <figcaption>Far-field acoustic comparison for nozzle shape effects</figcaption>
       </figure>
     </div>
   </div>
 
   <div class="item">
-    <h3>2. Upstream Geometry Effects on Twin Supersonic Jets</h3>
+    <h3>Upstream Geometry Effects on Twin Supersonic Jets</h3>
     <p>
-      Studying how upstream chamber geometry affects twin supersonic jet acoustics
-      even when the nominal nozzle design conditions remain the same. This project
-      highlights how facility-specific implementation details can strongly influence
-      screech feedback mechanisms, multimode behavior, and repeatability across
-      different experimental studies.
+      Studying how upstream chamber geometry affects twin supersonic jet acoustics even when
+      nominal nozzle design conditions remain the same. This project highlights how facility-level
+      implementation details can strongly influence screech feedback mechanisms, multimode behavior,
+      and repeatability across different experimental studies.
     </p>
 
     <div class="project-images">
-      <figure>
-        <img src="twin-jet-design.jpg" alt="Twin supersonic jet nozzle design">
-        <figcaption>Twin-jet nozzle configuration</figcaption>
+      <figure class="image-large">
+        <img src="twin-jet-design.jpg" alt="Twin jet nozzle geometry">
+        <figcaption>Twin-jet upstream geometry comparison</figcaption>
       </figure>
 
-      <figure>
+      <figure class="image-large">
         <img src="twin-jet-acoustics.jpg" alt="Twin jet acoustic dataset">
-        <figcaption>Twin-jet acoustic response</figcaption>
+        <figcaption>Acoustic response comparison for twin-jet configurations</figcaption>
       </figure>
     </div>
   </div>
 
   <div class="item">
-    <h3>3. Throat Location Effects on Circular Jet Acoustics</h3>
+    <h3>Throat Location Effects on Circular Jet Acoustics</h3>
     <p>
-      Investigating the influence of throat location on the acoustic behavior of
-      circular supersonic nozzles. This work examines an underexplored nozzle
-      design parameter and evaluates how changes in throat placement affect jet
-      development, shock-cell structure, and acoustic radiation.
+      Investigating the influence of throat location on circular supersonic nozzle acoustics.
+      This work examines an underexplored nozzle design parameter and evaluates how throat
+      placement affects jet development, shock-cell structure, and acoustic radiation.
     </p>
 
     <div class="project-images">
-      <figure>
+      <figure class="image-wide">
         <img src="throat-location-design.jpg" alt="Circular nozzle throat location design">
-        <figcaption>Circular nozzle throat-location design</figcaption>
+        <figcaption>Circular nozzle throat-location design comparison</figcaption>
       </figure>
 
-      <figure>
-        <img src="throat-location-acoustics.jpg" alt="Acoustic data for throat location study">
-        <figcaption>Throat-location acoustic comparison</figcaption>
+      <figure class="image-large">
+        <img src="throat-location-acoustic.jpg" alt="Circular nozzle throat location acoustic data">
+        <figcaption>Far-field acoustic comparison for throat-location study</figcaption>
       </figure>
     </div>
   </div>
 
   <div class="item">
-    <h3>4. Fluidic Injection and Trapezoidal Nozzle Studies</h3>
+    <h3>Fluidic Injection and Trapezoidal Nozzle Studies</h3>
     <p>
-      Assisted in experimental studies of fluidic injection and trapezoidal nozzle
-      configurations for supersonic jet noise reduction. These investigations focus
-      on how injection improves flow mixing, modifies turbulent structures, and
-      affects the acoustic behavior of non-axisymmetric supersonic jets.
+      Assisted in experimental studies of fluidic injection and trapezoidal nozzle configurations
+      for supersonic jet noise reduction. These studies focus on how injection improves flow mixing,
+      modifies turbulent structures, and affects the acoustic behavior of non-axisymmetric supersonic jets.
     </p>
 
     <div class="project-images">
-      <figure>
+      <figure class="image-medium">
         <img src="fluidic-injection-design.jpg" alt="Fluidic injection nozzle design">
-        <figcaption>Fluidic injection design</figcaption>
+        <figcaption>Fluidic injection nozzle design</figcaption>
       </figure>
 
-      <figure>
+      <figure class="image-medium">
         <img src="trapezoid-nozzle-design.jpg" alt="Trapezoidal nozzle design">
         <figcaption>Trapezoidal nozzle design</figcaption>
       </figure>
@@ -351,91 +359,94 @@
   </div>
 
   <div class="item">
-    <h3>5. Flow Visualization and Acoustic Analysis Methods</h3>
+    <h3>Flow Visualization and Acoustic Analysis Methods</h3>
     <p>
-      Applying advanced experimental and data-analysis methods to understand
-      turbulent flow structures and acoustic radiation in supersonic jets. Methods
-      include Schlieren visualization, SPOD, spectrogram analysis, wave-number
-      analysis, and modal processing techniques such as MPT.
+      Applying advanced experimental and data-analysis methods to understand turbulent flow
+      structures and acoustic radiation in supersonic jets. Methods include Schlieren visualization,
+      SPOD, spectrogram analysis, wave-number analysis, and modal processing techniques.
     </p>
 
     <div class="project-images">
-      <figure>
+      <figure class="image-large">
         <img src="schlieren.jpg" alt="Schlieren visualization of supersonic jet">
-        <figcaption>Schlieren visualization</figcaption>
+        <figcaption>Schlieren visualization of supersonic jet structure</figcaption>
       </figure>
 
-      <figure>
-        <img src="spod-analysis.jpg" alt="SPOD analysis result">
+      <figure class="image-large">
+        <img src="spod-analysis.jpg" alt="SPOD modal analysis">
         <figcaption>SPOD modal analysis</figcaption>
       </figure>
 
-      <figure>
-        <img src="spectrogram.jpg" alt="Spectrogram analysis of acoustic data">
-        <figcaption>Spectrogram analysis</figcaption>
+      <figure class="image-large">
+        <img src="spectrogram.jpg" alt="Spectrogram analysis">
+        <figcaption>Spectrogram analysis across operating conditions</figcaption>
       </figure>
 
-      <figure>
-        <img src="mpt-analysis.jpg" alt="MPT analysis result">
-        <figcaption>MPT / modal processing result</figcaption>
+      <figure class="image-large">
+        <img src="mpt-analysis.jpg" alt="Modal processing technique result">
+        <figcaption>Modal processing / acoustic field analysis</figcaption>
+      </figure>
+
+      <figure class="image-large">
+        <img src="Wavenumber.png" alt="Wave-number analysis">
+        <figcaption>Wave-number analysis of twin-jet acoustic field</figcaption>
       </figure>
     </div>
   </div>
-
 </section>
 
-  <section id="publications">
-    <h2>Publications & Presentations</h2>
+<section id="publications">
+  <h2>Publications & Presentations</h2>
 
-    <div class="item">
-      <h3>Conference Papers / Journal Papers</h3>
-      <p>
-        Add your publications here in citation format.
-      </p>
-    </div>
-
-    <div class="item">
-      <h3>Presentations</h3>
-      <p>
-        Add conference presentations, invited talks, posters, and AIAA presentations here.
-      </p>
-    </div>
-  </section>
-
-  <section id="skills">
-    <h2>Software & Technical Skills</h2>
-
-    <p><strong>Programming:</strong> MATLAB, Python, HTML, CSS</p>
-    <p><strong>Simulation / Modeling:</strong> ANSYS, COMSOL, Dymola, Flow-3D</p>
-    <p><strong>Data Analysis:</strong> Acoustic data processing, signal processing, SPOD, PIV data analysis</p>
-    <p><strong>Experimental:</strong> Schlieren imaging, PIV, far-field acoustics, supersonic nozzle testing</p>
-  </section>
- 
-   <section id="achievements">
-    <h2>Achievements</h2>
+  <div class="item">
+    <h3>Conference Papers / Journal Papers</h3>
     <p>
-      Achievements will be added here soon.
+      Add your publications here in citation format.
     </p>
-  </section>
-  
-  <section id="cv">
-    <h2>CV / Resume</h2>
+  </div>
+
+  <div class="item">
+    <h3>Presentations</h3>
     <p>
-      My CV will be available here soon.
+      Add conference presentations, invited talks, posters, and AIAA presentations here.
     </p>
-  </section>
+  </div>
+</section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p><strong>Email:</strong> your.email@example.com</p>
-    <p><strong>LinkedIn:</strong> Add your LinkedIn link here</p>
-    <p><strong>Google Scholar:</strong> Add your Google Scholar link here</p>
-    <p><strong>GitHub:</strong> github.com/Arshad3206</p>
-  </section>
+<section id="skills">
+  <h2>Software & Technical Skills</h2>
 
-  <footer>
-    <p>© 2026 Arshad Mohammed</p>
-  </footer>
+  <p><strong>Programming:</strong> MATLAB, Python, HTML, CSS, C, Modelica</p>
+  <p><strong>Simulation / Modeling:</strong> ANSYS Fluent, COMSOL Multiphysics, Flow-3D, Dymola, SolidWorks, CATIA V5, AutoCAD, Siemens NX</p>
+  <p><strong>Data Analysis:</strong> Acoustic data processing, FFT, POD, SPOD, wave-number analysis, acoustic surrogate wave-packet analysis, JMP, MATLAB, Python</p>
+  <p><strong>Experimental:</strong> Far-field acoustics, near-field acoustics, Schlieren imaging, PIV, hot-wire calibration, supersonic nozzle testing, LabVIEW data acquisition</p>
+</section>
+
+<section id="achievements">
+  <h2>Achievements</h2>
+  <p>
+    Achievements will be added here soon.
+  </p>
+</section>
+
+<section id="cv">
+  <h2>CV / Resume</h2>
+  <p>
+    My CV will be available here soon.
+  </p>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p><strong>Email:</strong> mohamma4@mail.uc.edu</p>
+  <p><strong>LinkedIn:</strong> linkedin.com/in/ArshadMohammedUC</p>
+  <p><strong>Google Scholar:</strong> Add your Google Scholar link here</p>
+  <p><strong>GitHub:</strong> github.com/Arshad3206</p>
+</section>
+
+<footer>
+  <p>© 2026 Arshad Mohammed</p>
+</footer>
 
 </body>
 </html>
